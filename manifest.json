@@ -1,0 +1,12 @@
+{
+  "name": "Cookie-Cutter",
+  "description": "Cookie getter & setter",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["downloads", "cookies"],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "cookie.png"
+  },
+  "host_permissions": ["<all_urls>"]
+}

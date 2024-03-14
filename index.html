@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cookie Cutter</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div id="container">
+    <h1>Cookie Cutter</h1>
+    <p>Upload and download cookies for the current tab</p>
+    <div class="tab-container">
+      <button class="tab-button active-tab" id="upload-tab" data-tab="upload">Set</button>
+      <button class="tab-button" id="download-tab" data-tab="download">Get</button>
+    </div>
+
+    <div id="upload-content" class="tab-content" data-tab="upload">
+        <h3>Set cookies via file upload or paste</h3>
+        <!-- Your upload content goes here -->
+        <input id="paste-cookies" placeholder="Paste cookies">
+        <h3>
+          or
+        </h3>
+        <label for="upload-cookies" id="upload-cookies-label">
+          Upload Cookies
+        </label>
+        <button class="get-set-cookie-btn" id="set-cookie-btn">Set Cookies</button>
+    <input id="upload-cookies" type="file" accept=".json"/>
+    </div>
+    <div id="download-content" class="tab-content" data-tab="download">
+        <h3>Get cookies from current tab of specified domain</h3>
+        <!-- Your download content goes here -->
+        <input id="domain-inp" placeholder="Enter domain">
+        <button class="get-set-cookie-btn" id="get-cookie-btn">Get Cookies</button>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

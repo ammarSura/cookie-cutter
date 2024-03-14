@@ -1,0 +1,103 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+body {
+    background-color: #f0f0f0;
+    font-family: 'Courier New', Courier, monospace;
+    width: 14rem;
+    height: 10rem;
+}
+
+#container {
+    width: 14rem;
+    height: 35rem;
+    max-width: 14rem;
+    box-sizing: border-box; /* Add this line */
+    padding: 1rem;
+}
+
+input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+}
+button {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+}
+.get-set-cookie-btn {
+    background-color: #4CAF50;
+    margin-top: 1rem;
+}
+.get-set-cookie-btn:hover {
+    background-color: #45a049;
+}
+
+#uploadButton {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+#upload-cookies-label {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #2ea5ee;
+    color: white;
+    text-align: center;
+    display: block;
+    margin-top: 1rem;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#file-upload-label:hover {
+    background-color: #45a049;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-top: 1rem;
+}
+
+/* Style the active tab content */
+.active {
+    display: block;
+}
+
+.tab-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Style the tab buttons */
+.tab-button {
+    background-color: #bcbbb9;
+    border: 1px solid #ccc;
+    margin-top: unset;
+    cursor: pointer;
+    width: 45%;
+    padding: 10px;
+}
+
+/* Style the active tab button */
+.active-tab {
+    background-color: #e4b51a;
+}
