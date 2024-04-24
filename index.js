@@ -85,15 +85,15 @@ document.getElementById('set-cookie-btn').onclick = async function(element) {
         window.alert('Please upload a valid cookie file or paste the cookies in the textarea');
     }
     console.log('setting cookies', parsedCookieArray);
-    // for(const cookie of cookieArray) {
-    //     console.log('setting cookies', cookie.key);
-    //     await chrome.cookies.set({
-    //         domain: cookie.domain,
-    //         value: cookie.value,
-    //         name: cookie.key,
-    //         path: cookie.path,
-    //         url: `https://${cookie.domain}`,
-    //     });
-    // }
+    for(const cookie of parsedCookieArray) {
+        console.log('setting cookies', cookie.key);
+        await chrome.cookies.set({
+            domain: cookie.domain,
+            value: cookie.value,
+            name: cookie.key,
+            path: cookie.path,
+            url: `https://${cookie.domain}`,
+        });
+    }
 }
 
